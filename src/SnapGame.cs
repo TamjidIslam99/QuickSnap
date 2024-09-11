@@ -6,6 +6,7 @@ namespace CardGames
 {
     public class SnapGame
     {
+<<<<<<< HEAD
         
 		public static void LoadResources()
         {
@@ -49,6 +50,9 @@ namespace CardGames
 		}
 
 		private static void HandleUserInput(Snap myGame)
+=======
+        private static void HandleUserInput(Snap myGame)
+>>>>>>> branch2
 		{
 			//Fetch the next batch of UI interaction
 			SwinGame.ProcessEvents();
@@ -74,6 +78,23 @@ namespace CardGames
 				}
 			}
 		}
+		public static void LoadResources()
+        {
+            Bitmap cards;
+            cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
+<<<<<<< HEAD
+            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);  
+			SwinGame.LoadFontNamed ("GameFont", " ChunkFive-Regular.otf", 12);    // set the cells in the bitmap to match the cards
+=======
+            SwinGame.BitmapSetCellDetails (cards, 167, 250, 13, 5, 53);      // set the cells in the bitmap to match the cards
+>>>>>>> origin/add-drawcard-images
+        }
+
+		/// <summary>
+		/// Respond to the user input -- with requests affecting myGame
+		/// </summary>
+		/// <param name="myGame">The game object to update in response to events.</param>
+		
 
 		/// <summary>
 		/// Draws the game to the Window.
