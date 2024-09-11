@@ -107,10 +107,7 @@ namespace CardGames
 		/// Updates the game -- it should flip the cards itself once started!
 		/// </summary>
 		/// <param name="myGame">The game to be updated...</param>
-		private static void UpdateGame(Snap myGame)
-		{
-			myGame.Update(); // just ask the game to do this...
-		}
+
 
         public static void Main()
         {
@@ -132,4 +129,8 @@ namespace CardGames
             }
         }
     }
+			private static void UpdateGame(Snap myGame)
+		{
+			myGame.Update(); // just ask the game to do this...
+		}
 }
